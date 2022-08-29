@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.logo{
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.container{
+    display: flex;
+}
+
+header{
+    background:  rgb(245, 243, 243);
+    /*height: 60px;*/
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    /*max-width: 1800px;*/
+    padding: 10px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+ul li{
+margin-left: 20px;
+/*padding: 10px;*/
+}
+
+ul li a{
+    text-decoration: none;
+    color: #121212;
+    /*font-size: 13px;*/
+}
+
+.login{
+    font-weight: bold;
+}
+
+.line{
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+}
+
+.heading .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.design_it_now{
+    text-align: center;
+    border: 1px solid  #ccc;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 5px;
+    width: 185px;
+}
+
+.my_closet{
+    border: 1px solid  #ccc;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.cart{
+    border: 1px solid  #ccc;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 5px;
+    display: flex;
+}
+
+.counter{
+    background: red;
+    color: #fff;
+    border-radius: 100%;
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    margin-left: 1px;
+}
+.items .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.items .container .item{
+    display: flex;
+    /*flex: 1;*/
+    border: 1px solid #ccc;
+    /*padding: 0px;*/
+    border-radius: 15px;
+   /* padding: 1px;*/
+    width: 120px;
+   /* padding-left: 28px;
+    font-size: 14px;*/
+}
+
+.items .container .item .circle-image {
+    border-radius: 100%;
+    background-color: rgb(206, 199, 199);
+    height: 22px;
+    width: 22px;
+    margin-right: 10px;
+}
+
+.boxes .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.boxes .container .outlinebox{
+   /* display: flex;*/
+    /*border: none;*/
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    /*border-radius: 10px;*/
+    /*background-color: rgb(245, 243, 243);
+    margin-top: 70px;
+    margin-right: 3px;
+    margin-left: 3px;*/
+}
+
+.boxes .container .outlinebox .box{
+    position: relative;
+     border: none;
+     width: 194px;
+     height: 194px;
+     border-radius: 14px;
+     background-color: rgb(245, 243, 243);
+     align-items: center;
+     margin-top: 2px;
+     margin-left: 2px;
+}
+
+.label{
+    position: absolute;
+    right: 23%;
+    bottom: 10%;
+    background: #fff;
+    padding: 10px;
+    width: 99px;
+    padding: 0px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.arrow{
+    background: #ccc;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(65, 61, 61);
+}
+
+.down{
+    background: #ccc;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(65, 61, 61);
+    transform: rotate(90deg);
+}
+
+.down-icon{
+    margin-bottom: 15px;
+}
+
+.buy_from_the_best{
+    text-align: center;
+    border: 1px solid  #ccc;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 5px;
+    width: 185px;
+    align-items: center;
+    margin-left: 37%;
+}
+
+.discover_design{
+    text-align: center;
+    border: 1px solid  #ccc;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 5px;
+    width: 185px;
+    align-items: center;
+    margin-left: 37%;
+}
+/* @media (max-width:768px) {
+    ul li a{
+        text-decoration: none;
+        color: #121212;
+        font-size: 14px;
+    }
+} */
