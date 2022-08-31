@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+:root{
+    color-scheme: dark;
+}
 
 html{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,*::before,*::after {
@@ -20,6 +24,7 @@ html{
     font-weight: bold;
     cursor: pointer;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .container{
@@ -28,13 +33,13 @@ html{
 
 header{
     background:  rgb(245, 243, 243);
-    /*height: 60px;*/
 }
 
 header .container{
+    overflow: auto;
+    white-space: nowrap;
     display: flex;
     justify-content: space-between;
-    /*max-width: 1800px;*/
     padding: 10px;
 }
 
@@ -45,13 +50,11 @@ ul{
 
 ul li{
 margin-left: 20px;
-/*padding: 10px;*/
 }
 
 ul li a{
     text-decoration: none;
     color: #121212;
-    /*font-size: 13px;*/
 }
 
 .login{
@@ -69,6 +72,8 @@ ul li a{
     justify-content: space-between;
     padding: 10px;
     align-items: center;
+    overflow: auto;
+    white-space: nowrap;
 }
 
 .design_it_now{
@@ -112,14 +117,9 @@ ul li a{
 
 .items .container .item{
     display: flex;
-    /*flex: 1;*/
     border: 1px solid #ccc;
-    /*padding: 0px;*/
     border-radius: 15px;
-   /* padding: 1px;*/
     width: 120px;
-   /* padding-left: 28px;
-    font-size: 14px;*/
 }
 
 .items .container .item .circle-image {
@@ -138,28 +138,28 @@ ul li a{
 }
 
 .boxes .container .outlinebox{
-   /* display: flex;*/
-    /*border: none;*/
     width: 200px;
     height: 200px;
+    cursor: pointer;
     border: 1px solid #ccc;
-    /*border-radius: 10px;*/
-    /*background-color: rgb(245, 243, 243);
-    margin-top: 70px;
-    margin-right: 3px;
-    margin-left: 3px;*/
 }
 
 .boxes .container .outlinebox .box{
     position: relative;
-     border: none;
-     width: 194px;
-     height: 194px;
-     border-radius: 14px;
-     background-color: rgb(245, 243, 243);
-     align-items: center;
-     margin-top: 2px;
-     margin-left: 2px;
+    border: none;
+    width: 194px;
+    height: 194px;
+    border-radius: 14px;
+    background-color: rgb(245, 243, 243);
+    align-items: center;
+    margin-top: 2px;
+    margin-left: 2px;
+    transition: .2s;
+}
+
+.boxes .container .outlinebox .box:hover{
+    transform: scale(1.08);
+    box-shadow: 0 1px 4px #575656;
 }
 
 .label{
@@ -176,28 +176,36 @@ ul li a{
 }
 
 .arrow{
-    background: #ccc;
+    background: rgb(226, 224, 224);
     height: 40px;
     width: 40px;
     border-radius: 100%;
     text-align: center;
     font-size: 30px;
-    color: rgb(65, 61, 61);
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+    
+}
+
+.arrow:hover{
+    background: #ccc;
 }
 
 .down{
-    background: #ccc;
-    height: 30px;
-    width: 30px;
+    background: rgb(226, 224, 224);
+    height: 27px;
+    width: 27px;
     border-radius: 100%;
     text-align: center;
     font-size: 18px;
-    color: rgb(65, 61, 61);
-    transform: rotate(90deg);
+    color: #fff;
+    font-weight: bolder; 
+    cursor: pointer;
 }
 
-.down-icon{
-    margin-bottom: 15px;
+.down:hover{
+    background: #ccc;
 }
 
 .buy_from_the_best{
@@ -221,10 +229,77 @@ ul li a{
     align-items: center;
     margin-left: 37%;
 }
-/* @media (max-width:768px) {
-    ul li a{
-        text-decoration: none;
-        color: #121212;
-        font-size: 14px;
+
+.to-top{
+    background: rgb(226, 224, 224);
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.to-top.active:hover{
+    background: #ccc;
+}
+
+@media (max-width:768px) {
+    .boxes .container{
+        overflow: auto;
+        white-space: nowrap;
     }
+
+
+.boxes .container .outlinebox .box:hover{
+    transform: scale(1.02);
+}
+
+.items .container .item{
+    margin: 17px;
+}
+
+.boxes .container .outlinebox{
+    width: 207px;
+    height: 207px;
+}
+
+header .container{
+    overflow: auto;
+    white-space: nowrap;
+    padding: 15px;
+}
+
+.items .container{
+    overflow: auto;
+    white-space: nowrap;
+}
+} 
+
+
+/* .boxes:hover .container .arrow{
+    display: block;
+    background: #ccc;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bolder;
 } */
