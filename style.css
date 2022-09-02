@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+/*
 :root{
     color-scheme: dark;
 }
+*/
 
 html{
     box-sizing: border-box;
@@ -16,7 +18,6 @@ html{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-
 }
 
 .logo{
@@ -90,6 +91,7 @@ ul li a{
     font-weight: bold;
     padding: 10px;
     margin-top: 5px;
+    text-decoration: none;
 }
 
 .cart{
@@ -259,6 +261,366 @@ ul li a{
     background: #ccc;
 }
 
+.left-icon{
+    /*position: absolute;*/
+    background: rgb(226, 224, 224);
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;  
+    right: 208px;
+    bottom: 90px;  
+}
+
+.left-icon-card{
+    position: absolute;
+    background: rgb(226, 224, 224);
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;  
+    right: 240px;
+    bottom: 90px;  
+}
+
+.sub-menu{
+    margin-top: 10px;
+}
+.sub-menu .container-1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.closet{
+    text-align: center;
+    border: 1px solid  #ccc;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 5px;
+    width: 185px;
+}
+
+.container-1 .btn-change{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.container-2 .btn-change-2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;
+}
+
+.btn-front{
+border-radius: 17px 0 0 17px;
+width: 118px;
+padding: 5px;
+text-align: center;
+border: 1px  solid #ccc;
+background: #fff;
+margin-right: 0;
+}
+
+.btn-back{
+    margin-left: 0;
+    border-radius: 0 17px 17px 0;
+    width: 118px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background: #ccc;
+}
+
+.change-cards{
+display: flex;
+margin-top: 70px;
+/*border: 1px solid red;*/
+justify-content: center;
+
+}
+
+.change-cards .swap-box-1,.swap-box-2,.swap-box-3,.swap-box-4,.swap-box-5{
+    border-radius: 10px;
+}
+.swap-box-1{
+    width: 260px;
+  height: 220px;
+  background-color: rgb(245, 243, 243);
+ z-index: -2;
+ margin-right: -150px;
+ margin-top: 17px;
+ position: relative;
+ border: 1px solid #ccc;
+}
+
+.swap-box-2{
+    width: 260px;
+    height: 300px;
+    background-color: rgb(245, 243, 243);
+    z-index: -1;
+    margin-right: -150px;
+    margin-top: -20px;
+    border: 1px solid #ccc;
+}
+
+.swap-box-3{
+    display: flex;
+    width: 260px;
+    height: 360px;
+    background-color: rgb(245, 243, 243);
+    z-index: 0;
+    margin-top: -60px;
+    margin-right: -150px;
+    justify-content: center;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.swap-box-4{
+    width: 260px;
+  height: 300px;
+  background-color: rgb(245, 243, 243);
+  z-index: -1;
+margin-right: -150px;
+margin-top: -20px;
+border: 1px solid #ccc;
+}
+
+.swap-box-5{
+    width: 260px;
+    height: 220px;
+    background-color: rgb(245, 243, 243);
+    z-index: -2;
+    margin-top: 17px;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+/*.swap-outline{
+width: 240px;
+height: 240px;
+border: 1px solid red;
+align-items: center;
+}*/
+
+.right-icon{
+    position: absolute;
+    background: rgb(226, 224, 224);
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;  
+    left: 240px;
+    bottom: 90px;
+}
+
+.edit-delete{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+
+}
+
+.edit-delete button{
+width: 120px;
+padding: 5px;
+border-radius: 10px;
+border: 1px solid #ccc;
+outline: none;
+border: 1px solid #ccc;
+}
+
+.edit-delete .btn-edit{
+background: #fff;
+}
+
+.edit-delete .btn-delete{
+    color: #fff;
+    background: rgb(252, 82, 82);
+    outline: none;
+    border: transparent;
+    }
+
+    .share{
+        text-align: center;
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    .btn-share{
+        padding: 15px;
+        width: 250px;
+        background: #fff;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        margin-left: 1%;
+    }
+
+    .order-now{
+        position: absolute;
+        right: 3%;
+        bottom: 2%;
+        background: #fff;
+        padding: 10px;
+        width: 240px;
+        padding: 10px;
+        border-radius: 25px;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+
+    .container-2 .btn-change{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .box-left{
+        display: flex;
+        width: 500px;
+        height: 450px;
+        background-color: rgb(245, 243, 243);
+        justify-content: center;
+        position: relative;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .order-now-1{
+        height: 20px;
+        position: absolute;
+        bottom: 4%;
+        width: 400px;
+        padding-top: 14px;
+        padding-bottom: 35px;
+        border-radius: 35px;
+        border: 1px solid #ccc;
+        background: #fff;
+
+        /* position: absolute;
+        right: 30%;
+        bottom: 2%;
+        background: #fff;
+        padding: 10px;
+        width: 240px;
+        padding: 10px;
+        border-radius: 25px;
+        border: 1px solid #ccc;
+        text-align: center; */
+    }
+
+    .component-column-3{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .scroll-cards{
+        overflow: auto;
+        /* border: 1px solid blue; */
+        height: 444px;
+        overflow-x: hidden;
+        /*margin-bottom: 20px;*/
+    }
+
+    .scroll-card{
+        margin-right: 15px;
+        width: 450px;
+        height: 200px;
+       /* border: 1px solid red;*/
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: rgb(245, 243, 243);
+    }
+
+    .btn-right{
+        width: 195px;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        margin-left: 35px;
+        border: 1px solid #ccc;
+        background: #fff;
+    }
+
+    .btn-blue .btn-right{
+        background: #6363fd;
+        color: #fff;
+        border: none;
+        outline: none;
+    }
+
+    .upload-submit{
+        display: flex;
+        justify-content: space-between;
+        /*margin-right: 30px;*/
+        margin-bottom: 20px;
+    }
+
+    .upload-submit .btn-right-upload{
+       width: 108px;
+        border-radius: 0;
+       /* margin-right: 10px;*/
+        padding: 5px;
+        background: #fff;
+        border: 1px solid #ccc;
+        margin-left: 16px;
+    }
+
+    .options input{
+        margin-bottom: 5px;
+        padding: 10px;
+        background: #ccc;
+        border: none;
+        width: 230px;
+        margin-left: 16px;
+    }
+
+    .btn-save{
+        width: 250px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 17px;
+        margin-left: 10px;
+        border: none;
+        margin-right: 5px;
+        background: #fff;
+        border: 1px solid #ccc;
+    }
+    .options{
+        flex-direction: column;
+        justify-content: center;
+        /*border: 1px solid;*/
+    }
+
+    .btn-right-submit{
+        width: 108px;
+        border-radius: 0;
+       margin-right: 19px;
+        padding: 5px;
+        background: #fff;
+        border: 1px solid #ccc;
+        margin-left: 0;
+    }
+
 @media (max-width:768px) {
     .boxes .container{
         overflow: auto;
@@ -286,6 +648,14 @@ header .container{
 }
 
 .items .container{
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.change-cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
     overflow: auto;
     white-space: nowrap;
 }
